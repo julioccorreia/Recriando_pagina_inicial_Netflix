@@ -1,0 +1,214 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    text-decoration: none;
+}
+
+/*Elementos Base*/
+
+body {
+    background: var(--preto);
+    font-family: "Arial", Times, serif;
+    color: white;
+}
+
+/*Barra inicial*/
+header {
+    position: absolute;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 4%;
+    margin-top: 1%;
+}
+
+/*Barra inicial - Lado Esquerdo*/
+header .logo-navegacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: "Arial Black", Times, serif;
+    font-size: 30px;
+}
+
+/*Barra Navegar*/
+.navegar-default {
+    display: block;
+}
+
+.botao-navegar {
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    display: none;
+}
+
+#navegar:hover {
+    cursor: pointer;
+}
+
+header nav ul {
+    float: left;
+}
+
+header nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    margin-left: 30px;
+}
+
+header nav .botao-navegar ul li ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header nav .botao-navegar ul li:hover ul {
+    display: block;
+}
+
+header nav .botao-navegar ul li ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+
+    margin: 10px 0;
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+
+    margin: 10px 0;
+}
+
+header nav ul li a:hover {
+    color: rgb(130, 130, 130);
+    transition: 0.2s ease all;
+}
+
+/*Barra inicial - Lado Direito*/
+header .perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 11px;
+}
+
+header #botao-pesquisar:hover {
+    cursor: pointer;
+}
+
+header #botao-pesquisar:active {
+}
+
+header .pesquisar {
+    display: none;
+}
+
+header .perfil i {
+    margin-left: 15px;
+}
+
+header .perfil .foto-perfil {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+
+    margin-left: 15px;
+}
+/*Filme Principal*/
+
+main .container {
+    position: absolute;
+    margin: 0 4%;
+}
+
+.filme-principal {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) 100%), url("../img/capa_kuroko.jpg");
+
+    height: 70vh;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    max-width: 60vw;
+    max-height: 30vh;
+    margin-bottom: 20px;
+
+    font-size: 20px;
+}
+
+.titulo {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 60px;
+}
+
+.botao {
+    font-size: 18px;
+    font-weight: bolder;
+
+    border: none;
+    border-radius: 7px;
+
+    padding: 10px 25px;
+    margin-right: 10px;
+
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.botao:nth-child(1) {
+    background-color: white;
+    color: black;
+}
+
+.botao:nth-child(1):hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.botao:nth-child(2) {
+    margin-right: 0;
+
+    background-color: rgb(95, 95, 95);
+    color: white;
+}
+
+.botao:nth-child(2):hover {
+    background-color: rgba(95, 95, 95, 0.5);
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}

@@ -1,0 +1,75 @@
+@media screen and (min-width: 1600px) {
+    .filme-principal {
+        height: 100vh;
+    }
+
+    .filme-principal .descricao {
+        max-width: 50vw;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .navegar-default {
+        display: none;
+    }
+
+    .botao-navegar {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .filme-principal .descricao {
+        max-width: 70vw;
+        max-height: 20vh;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #botao-presente {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    header .logo {
+        font-size: 20px;
+    }
+
+    header .perfil {
+        font-size: 6px;
+    }
+
+    header .perfil .foto-perfil {
+        width: 22px;
+        height: 22px;
+    }
+
+    header nav ul li {
+        margin-left: 15px;
+    }
+
+    .titulo {
+        font-size: 40px;
+    }
+
+    .filme-principal .descricao {
+        font-size: 16px;
+    }
+
+    .botao {
+        width: 250px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    header .logo {
+        font-size: 15px;
+    }
+
+    header nav .botao-navegar ul li {
+        font-size: 12px;
+    }
+}

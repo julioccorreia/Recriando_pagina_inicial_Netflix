@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/main.css" />
+        <link rel="stylesheet" href="style/responsive.css" />
+        <link rel="shortcut icon" href="./img/netflix.png" />
+
+        <!--owl css-->
+        <link rel="stylesheet" href="style/owl/owl.carousel.min.css" />
+        <link rel="stylesheet" href="style/owl/owl.theme.default.min.css" />
+        <title>Netflix</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo-navegacao">
+                    <a href="" class="logo">NETFLIX</a>
+                    <nav>
+                        <div class="navegar-default">
+                            <ul>
+                                <li><a href="index.html">Início</a></li>
+                                <li><a href="">Séries</a></li>
+                                <li><a href="">Filmes</a></li>
+                                <li><a href="">Documentários</a></li>
+                            </ul>
+                        </div>
+                        <div class="botao-navegar">
+                            <ul>
+                                <li>
+                                    <p id="navegar">Navegar <i class="fas fa-sort-down fa-lg"></i></p>
+                                    <ul>
+                                        <li><a href="index.html">Início</a></li>
+                                        <li><a href="">Séries</a></li>
+                                        <li><a href="">Filmes</a></li>
+                                        <li><a href="">Documentários</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="perfil">
+                    <input type="text" class="pesquisar" />
+                    <i id="botao-pesquisar" class="fas fa-search fa-2x"></i>
+                    <i id="botao-presente" class="fas fa-gift fa-2x"></i>
+                    <i class="fas fa-bell fa-2x"></i>
+                    <img src="./img/foto_perfil.jpg" alt="" class="foto-perfil" />
+                    <i class="fas fa-sort-down fa-lg"></i>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="filme-principal">
+                <div class="container">
+                    <h3 class="titulo">Kuroko no Basketball</h3>
+                    <p class="descricao">
+                        Kuroko é um membro do time de basquete colegial lendário conhecido como “Geração dos Milagres”, e embora ninguém saiba, os cinco principais jogadores o consideram o melhor
+                        jogador de basquete. Quando ele se junta à equipe, todos se surpreendem ao descobrir que Kuroko é pequeno, magro e fraco. Qual é o segredo que o faz tão famoso, e quais de suas
+                        habilidades são capazes de ajudar a sua equipe?
+                    </p>
+                    <div class="botoes">
+                        <button role="button" class="botao">
+                            <i class="fas fa-play"></i>
+                            Assistir
+                        </button>
+                        <button role="button" class="botao">
+                            <i class="fas fa-info-circle"></i>
+                            Mais Informações
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="carrossel-filmes">
+            <div class="owl-carousel owl-theme">
+                <div class="item" class="box-filme"><img src="img/cobra_kai.jpg" alt="Cobra Kai" /></div>
+                <div class="item" class="box-filme"><img src="img/flash.jpg" alt="Flash" /></div>
+                <div class="item" class="box-filme"><img src="img/lucifer.jpg" alt="Lucifer" /></div>
+                <div class="item" class="box-filme"><img src="img/simpsons.jpg" alt="Simpsons" /></div>
+                <div class="item" class="box-filme"><img src="img/soul.jpg" alt="Soul" /></div>
+                <div class="item" class="box-filme"><img src="img/the_good_doctor.jpg" alt="The Good Doctor" /></div>
+                <div class="item" class="box-filme"><img src="img/vampire_diares.jpg" alt="Vampire Diares" /></div>
+                <div class="item" class="box-filme"><img src="img/vikings.jpg" alt="Vikings" /></div>
+            </div>
+        </div>
+
+        <!--javascript-->
+        <script src="https://kit.fontawesome.com/a484d36a70.js" crossorigin="anonymous"></script>
+        <script src="js/owl/jquery.min.js"></script>
+        <script src="js/owl/owl.carousel.min.js"></script>
+        <script src="js/owl/setup.js"></script>
+    </body>
+</html>
